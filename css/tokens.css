@@ -1,0 +1,115 @@
+/**
+ * Netti design tokens — ported from @netti/design-system (github.com/SquaredMc/netti-design-system),
+ * which is itself generated from the Netti Figma file. Do not hand-edit values here;
+ * update the source design system and re-copy instead.
+ */
+:root {
+  --netti-color-navy-600: #07205e;
+  --netti-color-navy-700: #0e1868;
+  --netti-color-navy-800: #010045;
+  --netti-color-navy-900: #00021b;
+  --netti-color-cyan-200: #a8eff7;
+  --netti-color-cyan-400: #26d4eb;
+  --netti-color-blue-800: #01236e;
+  --netti-color-green-100: #dcfce7;
+  --netti-color-green-500: #00a63e;
+  --netti-color-red-100: #fee2e2;
+  --netti-color-red-600: #e1000a;
+  --netti-color-grey-50: #f3f4f6;
+  --netti-color-grey-100: #e5e7eb;
+  --netti-color-grey-200: #eeeeee;
+  --netti-color-grey-500: #6b7280;
+  --netti-color-grey-700: #4a5565;
+  --netti-color-grey-950: #0a0a0a;
+  --netti-color-white: #ffffff;
+
+  --netti-color-background-screen: #00021b;
+  --netti-color-background-card: #010045;
+  --netti-color-background-card-subtle: #0e1868;
+  --netti-color-background-card-border: #07205e;
+  --netti-color-background-surface: #ffffff;
+  --netti-color-background-surface-raised: #f3f4f6;
+
+  --netti-color-text-primary: #0a0a0a;
+  --netti-color-text-secondary: #4a5565;
+  --netti-color-text-muted: #6b7280;
+  --netti-color-text-inverse: #ffffff;
+  --netti-color-text-positive: #00a63e;
+  --netti-color-text-negative: #e1000a;
+  --netti-color-text-brand: #010045;
+
+  --netti-color-action-primary-bg: #26d4eb;
+  --netti-color-action-primary-text: #010045;
+  --netti-color-action-secondary-border: #26d4eb;
+  --netti-color-action-selected-border: #01236e;
+  --netti-color-action-selected-bg: #ffffff;
+
+  --netti-color-border-default: #eeeeee;
+  --netti-color-border-strong: #e5e7eb;
+  --netti-color-border-inverse: #07205e;
+  --netti-color-border-focus: #26d4eb;
+
+  --netti-color-status-positive-text: #00a63e;
+  --netti-color-status-positive-bg: #dcfce7;
+  --netti-color-status-negative-text: #e1000a;
+  --netti-color-status-negative-bg: #fee2e2;
+
+  --netti-radius-none: 0px;
+  --netti-radius-sm: 3px;
+  --netti-radius-md: 6px;
+  --netti-radius-lg: 9px;
+  --netti-radius-segment: 12px;
+  --netti-radius-container: 16px;
+  --netti-radius-pill: 24px;
+  --netti-radius-sheet: 32px;
+  --netti-radius-full: 9999px;
+
+  --netti-space-0: 0px;
+  --netti-space-1: 1px;
+  --netti-space-2: 2px;
+  --netti-space-4: 4px;
+  --netti-space-6: 6px;
+  --netti-space-8: 8px;
+  --netti-space-12: 12px;
+  --netti-space-16: 16px;
+  --netti-space-20: 20px;
+  --netti-space-24: 24px;
+  --netti-space-32: 32px;
+  --netti-space-40: 40px;
+  --netti-space-48: 48px;
+
+  --netti-shadow-card: 0px 1px 2px -1px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  --netti-shadow-sheet: 0px -8px 8px 0px rgba(0, 0, 0, 0.12);
+
+  --netti-font-family-sans: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --netti-font-weight-regular: 400;
+  --netti-font-weight-medium: 500;
+  --netti-font-weight-semibold: 600;
+  --netti-font-weight-bold: 700;
+
+  --netti-font-size-h1: 36px;
+  --netti-font-size-h2: 28px;
+  --netti-font-size-h3: 22px;
+  --netti-font-size-lg: 24px;
+  --netti-font-size-md-sb: 18px;
+  --netti-font-size-md: 16px;
+  --netti-font-size-sm: 14px;
+  --netti-font-size-caption: 12px;
+
+  --netti-font-line-height-h1: 40px;
+  --netti-font-line-height-h2: 36px;
+  --netti-font-line-height-h3: 28px;
+  --netti-font-line-height-lg: 32px;
+  --netti-font-line-height-md-sb: 26px;
+  --netti-font-line-height-md: 24px;
+  --netti-font-line-height-sm: 24px;
+  --netti-font-line-height-caption: 16px;
+
+  /* Marketing-site-only tokens: no equivalent in the app design system (mobile app has
+     no hero/section layout components), composed from the core spacing/radius/color scale
+     above rather than inventing off-system values. Flagged per PRD §5. */
+  --netti-web-maxw: 1180px;
+  --netti-web-maxw-legal: 760px;
+  --netti-web-section-y: 96px;
+  --netti-web-section-y-sm: 56px;
+}
