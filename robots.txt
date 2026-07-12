@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://squaredmc.github.io/Netti-website/sitemap.xml
+Sitemap: https://netti-app.com/sitemap.xml
