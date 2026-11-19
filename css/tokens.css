@@ -1,69 +1,114 @@
 /**
- * Netti design tokens — ported from @netti/design-system (github.com/SquaredMc/netti-design-system),
- * which is itself generated from the Netti Figma file. Do not hand-edit values here;
- * update the source design system and re-copy instead.
+ * Do not edit directly, this file was auto-generated.
  */
+
 :root {
-  --netti-color-navy-600: #07205e;
-  --netti-color-navy-700: #0e1868;
-  --netti-color-navy-800: #010045;
-  --netti-color-navy-900: #00021b;
-  --netti-color-cyan-200: #a8eff7;
-  --netti-color-cyan-400: #26d4eb;
-  --netti-color-blue-800: #01236e;
+  --netti-color-navy-600: #07205e; /** Dark card border */
+  --netti-color-navy-700: #0e1868; /** Mid navy — toggle bar bg on dark cards */
+  --netti-color-navy-800: #010045; /** Primary dark — header, primary buttons */
+  --netti-color-navy-900: #00021b; /** Deepest navy — darkest backgrounds */
+  --netti-color-cyan-50: #e5fafd; /** Palest cyan — confirmation card tint. Code extension: a raw hex in the Figma DS (ConfirmationCard 64:18); Color/alert/Highlight in the app file */
+  --netti-color-cyan-200: #a8eff7; /** Cyan tint — light accent */
+  --netti-color-cyan-400: #26d4eb; /** Primary accent / highlight */
+  --netti-color-blue-800: #01236e; /** Selected / focus state */
   --netti-color-green-100: #dcfce7;
+  --netti-color-green-400: #00c950; /** Positive text in dark mode: 6.49:1 on ink/800, 7.79:1 on ink/900 */
   --netti-color-green-500: #00a63e;
-  --netti-color-red-100: #fee2e2;
-  --netti-color-red-600: #e1000a;
+  --netti-color-green-700: #007a33; /** Positive text — 5.48:1 on white, 4.98:1 on grey/50 (WCAG AA small text) */
+  --netti-color-green-900: #0a3d22; /** Deep green — positive status background in dark mode */
+  --netti-color-red-100: #fee2e2; /** Error background — code extension, not in the Figma DS */
+  --netti-color-red-300: #ff8a85; /** Light red — negative text in dark mode */
+  --netti-color-red-600: #e1000a; /** Errors, destructive — code extension, not in the Figma DS */
+  --netti-color-red-900: #4a0a0e; /** Deep red — negative status background in dark mode */
   --netti-color-grey-50: #f3f4f6;
   --netti-color-grey-100: #e5e7eb;
   --netti-color-grey-200: #eeeeee;
-  --netti-color-grey-500: #6b7280;
+  --netti-color-grey-500: #6b7280; /** Muted text — WCAG AA ≥ 4.5:1 on white */
   --netti-color-grey-700: #4a5565;
   --netti-color-grey-950: #0a0a0a;
+  --netti-color-ink-800: #292933; /** Ink: dark mode raised surfaces, rows inside a sheet, the selected segment */
+  --netti-color-ink-900: #1a1a23; /** Ink: dark mode cards, pills and sheets */
+  --netti-color-ink-950: #0a0a10; /** Ink: grey with a faint navy tint. Dark mode app background */
   --netti-color-white: #ffffff;
-
-  --netti-color-background-screen: #00021b;
-  --netti-color-background-card: #010045;
-  --netti-color-background-card-subtle: #0e1868;
-  --netti-color-background-card-border: #07205e;
-  --netti-color-background-surface: #ffffff;
-  --netti-color-background-surface-raised: #f3f4f6;
-
-  --netti-color-text-primary: #0a0a0a;
-  --netti-color-text-secondary: #4a5565;
-  --netti-color-text-muted: #6b7280;
-  --netti-color-text-inverse: #ffffff;
-  --netti-color-text-positive: #00a63e;
-  --netti-color-text-negative: #e1000a;
-  --netti-color-text-brand: #010045;
-
-  --netti-color-action-primary-bg: #26d4eb;
-  --netti-color-action-primary-text: #010045;
-  --netti-color-action-secondary-border: #26d4eb;
-  --netti-color-action-selected-border: #01236e;
-  --netti-color-action-selected-bg: #ffffff;
-
-  --netti-color-border-default: #eeeeee;
-  --netti-color-border-strong: #e5e7eb;
-  --netti-color-border-inverse: #07205e;
-  --netti-color-border-focus: #26d4eb;
-
-  --netti-color-status-positive-text: #00a63e;
-  --netti-color-status-positive-bg: #dcfce7;
-  --netti-color-status-negative-text: #e1000a;
-  --netti-color-status-negative-bg: #fee2e2;
-
+  --netti-color-white70: rgba(255, 255, 255, 0.7); /** White at 70% — Figma white/70 (a JSON token can't also be a group, so not white.70) */
+  --netti-color-white50: rgba(255, 255, 255, 0.5); /** White at 50% — Figma white/50 */
+  --netti-color-white20: rgba(255, 255, 255, 0.2); /** White at 20% — Figma white/20 */
+  --netti-color-white10: rgba(255, 255, 255, 0.1); /** White at 10% — Figma white/10 */
+  --netti-color-background-screen: #00021b; /** Full-screen gradient base — page background */
+  --netti-color-background-card: #010045; /** Dark card surface — Salary Card, Additional Income Card */
+  --netti-color-background-card-subtle: #0e1868; /** Toggle bar inside dark cards */
+  --netti-color-background-card-border: #07205e; /** Border on dark cards */
+  --netti-color-background-surface: #ffffff; /** Primary surface — Bottom Sheet, inputs, white cards */
+  --netti-color-background-surface-raised: #f3f4f6; /** Raised surface — segmented control bg, callout boxes */
+  --netti-color-background-highlight: #e5fafd; /** Highlighted surface — confirmation card */
+  --netti-color-background-app: #f3f4f6; /** App background behind the cards (native v3) */
+  --netti-color-background-hero: #010045; /** Take Home Hero surface — the one branded surface */
+  --netti-color-background-sheet: #f3f4f6; /** A sheet over the app (editors, Add income): matches background/app in light, a step above it in dark */
+  --netti-color-background-sheet-surface: #ffffff; /** Cards and the pinned live take-home inside a sheet: matches background/surface in light, a step above background/sheet in dark */
+  --netti-color-background-hero-tag: rgba(255, 255, 255, 0.2); /** A Tag on the Take Home Hero (Emphasis=On hero), behind text/on-hero: white 20% in light and dark */
+  --netti-color-text-primary: #0a0a0a; /** Primary body text on light surfaces */
+  --netti-color-text-secondary: #4a5565; /** Secondary labels, captions */
+  --netti-color-text-muted: #6b7280; /** Muted text — placeholders, hints, disabled. WCAG AA ≥ 4.5:1 on white. */
+  --netti-color-text-inverse: #ffffff; /** Text on dark card surfaces */
+  --netti-color-text-positive: #007a33; /** Take-home pay, positive amounts, success */
+  --netti-color-text-negative: #e1000a; /** Errors, destructive actions, negative amounts */
+  --netti-color-text-brand: #010045; /** Brand text — used on cyan backgrounds (Pro button) */
+  --netti-color-text-on-hero: #ffffff; /** Text on the hero surface */
+  --netti-color-text-on-hero-muted: rgba(255, 255, 255, 0.7); /** Secondary text on the hero surface */
+  --netti-color-action-primary-bg: #26d4eb; /** Pro / primary CTA fill — cyan */
+  --netti-color-action-primary-text: #010045; /** Text on cyan CTA — navy */
+  --netti-color-action-secondary-border: #26d4eb; /** Outlined secondary button border */
+  --netti-color-action-selected-border: #01236e; /** Selected toggle pill border, focus rings */
+  --netti-color-action-selected-bg: #ffffff; /** Selected toggle pill fill */
+  --netti-color-border-default: #eeeeee; /** Dividers, card outlines on light surfaces */
+  --netti-color-border-strong: #e5e7eb; /** Stronger dividers, grabber handle */
+  --netti-color-border-inverse: #07205e; /** Border on dark card surfaces */
+  --netti-color-border-focus: #26d4eb; /** Focus ring — accessibility */
+  --netti-color-border-hero: #010045; /** Hero outline — visible in dark mode */
+  --netti-color-status-positive-text: #007a33; /** Success text and icons */
+  --netti-color-status-positive-bg: #dcfce7; /** Success background — Tick active state */
+  --netti-color-status-negative-text: #e1000a; /** Error text and icons */
+  --netti-color-status-negative-bg: #fee2e2; /** Error background */
+  --netti-color-surface: #ffffff; /** Themed card/page surface (light mode) */
+  --netti-color-surface-raised: #f3f4f6; /** Themed raised surface — toggle bar, insets (light mode) */
+  --netti-color-surface-border: #eeeeee; /** Themed border on a surface (light mode) */
+  --netti-color-on-surface: #0a0a0a; /** Themed primary text on a surface (light mode) */
+  --netti-color-on-surface-muted: #4a5565; /** Themed secondary text on a surface (light mode) */
+  --netti-color-on-surface-faint: #6b7280; /** Themed tertiary / hint text on a surface (light mode) */
+  --netti-color-divider: #eeeeee; /** Themed divider/separator on a surface (light mode) */
+  --netti-color-surface-overlay: rgba(0, 0, 0, 0.06); /** Themed subtle fill on a surface — chips, hover, remove (light mode) */
   --netti-radius-none: 0px;
   --netti-radius-sm: 3px;
   --netti-radius-md: 6px;
   --netti-radius-lg: 9px;
-  --netti-radius-segment: 12px;
-  --netti-radius-container: 16px;
-  --netti-radius-pill: 24px;
-  --netti-radius-sheet: 32px;
-  --netti-radius-full: 9999px;
-
+  --netti-radius-segment: 12px; /** Segmented control items and switch options */
+  --netti-radius-container: 16px; /** Segmented control / switch outer container */
+  --netti-radius-pill: 24px; /** Cards, inputs, buttons — primary UI radius */
+  --netti-radius-sheet: 32px; /** Bottom sheet top corners */
+  --netti-radius-full: 9999px; /** True pill / circle */
+  --netti-layout-screen-margin: 16px; /** Horizontal padding inside screen-width containers */
+  --netti-layout-screen-gap: 20px; /** Vertical gap between top-level screen sections */
+  --netti-layout-section-gap: 24px; /** Gap between content sections within a page */
+  --netti-card-padding: 20px; /** Inner padding of card components */
+  --netti-card-gap: 12px; /** Gap between items inside a card */
+  --netti-card-border-radius: 12px; /** Card corner radius */
+  --netti-sheet-padding: 20px; /** Horizontal padding inside bottom sheets */
+  --netti-sheet-border-radius: 32px; /** Top corner radius for bottom sheets */
+  --netti-button-padding-x: 16px; /** Horizontal padding inside buttons */
+  --netti-button-padding-y-lg: 12px; /** Vertical padding — Large button */
+  --netti-button-padding-y-sm: 8px; /** Vertical padding — Medium button */
+  --netti-button-border-radius-lg: 12px; /** Corner radius — Large button */
+  --netti-button-border-radius-sm: 8px; /** Corner radius — Medium button */
+  --netti-toggle-padding: 4px; /** Inner padding of segmented control container */
+  --netti-toggle-border-radius: 16px; /** Outer container radius */
+  --netti-toggle-pill-radius: 12px; /** Selected pill radius inside toggle */
+  --netti-list-row-height: 56px; /** Fixed height of a list row */
+  --netti-list-row-padding-x: 16px; /** Horizontal padding of list row content */
+  --netti-shadow-card: 0px 1px 2px -1px rgba(0,0,0,0.10), 0px 1px 3px 0px rgba(0,0,0,0.10); /** Default card elevation and selected interactive item */
+  --netti-shadow-sheet: 0px -8px 8px 0px rgba(0,0,0,0.12); /** Bottom sheet — casts upward */
+  --netti-shadow-none: 0px 0px 0px 0px rgba(0,0,0,0);
+  --netti-elevate-1: rgba(0, 0, 0, 0.03); /** Hover overlay — lightest interaction layer */
+  --netti-elevate-2: rgba(0, 0, 0, 0.08); /** Active / pressed overlay */
   --netti-space-0: 0px;
   --netti-space-1: 1px;
   --netti-space-2: 2px;
@@ -71,31 +116,26 @@
   --netti-space-6: 6px;
   --netti-space-8: 8px;
   --netti-space-12: 12px;
-  --netti-space-16: 16px;
+  --netti-space-16: 16px; /** Default content horizontal padding (mobile) */
   --netti-space-20: 20px;
   --netti-space-24: 24px;
   --netti-space-32: 32px;
   --netti-space-40: 40px;
   --netti-space-48: 48px;
-
-  --netti-shadow-card: 0px 1px 2px -1px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-  --netti-shadow-sheet: 0px -8px 8px 0px rgba(0, 0, 0, 0.12);
-
-  --netti-font-family-sans: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --netti-font-family-sans: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; /** Primary UI typeface */
+  --netti-font-family-mono: 'JetBrains Mono', Menlo, monospace; /** Monospace — code, numeric data */
   --netti-font-weight-regular: 400;
   --netti-font-weight-medium: 500;
   --netti-font-weight-semibold: 600;
   --netti-font-weight-bold: 700;
-
-  --netti-font-size-h1: 36px;
-  --netti-font-size-h2: 28px;
-  --netti-font-size-h3: 22px;
-  --netti-font-size-lg: 24px;
-  --netti-font-size-md-sb: 18px;
-  --netti-font-size-md: 16px;
-  --netti-font-size-sm: 14px;
-  --netti-font-size-caption: 12px;
-
+  --netti-font-size-h1: 36px; /** Display — 36/40 Bold */
+  --netti-font-size-h2: 28px; /** H2 — 28/36 Bold */
+  --netti-font-size-h3: 22px; /** H3 — 22/28 Semi Bold */
+  --netti-font-size-lg: 24px; /** Large summary figure — 24/32 (totals) */
+  --netti-font-size-md-sb: 18px; /** Body LG — 18/26 Semi Bold */
+  --netti-font-size-md: 16px; /** Body — 16/24 Regular */
+  --netti-font-size-sm: 14px; /** Label — 14/20 Semi Bold */
+  --netti-font-size-caption: 12px; /** Caption / eyebrow — 12/16 Medium */
   --netti-font-line-height-h1: 40px;
   --netti-font-line-height-h2: 36px;
   --netti-font-line-height-h3: 28px;
@@ -103,13 +143,65 @@
   --netti-font-line-height-md-sb: 26px;
   --netti-font-line-height-md: 24px;
   --netti-font-line-height-sm: 24px;
+  --netti-font-line-height-sm-sb: 20px;
   --netti-font-line-height-caption: 16px;
+  --netti-text-style-h1: 700 36px/40px Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; /** Display — 36/40 Bold */
+  --netti-text-style-h2: 700 28px/36px Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; /** H2 — 28/36 Bold */
+  --netti-text-style-h3: 600 22px/28px Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; /** H3 — 22/28 Semi Bold */
+  --netti-text-style-body-lg: 600 18px/26px Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; /** Body LG — 18/26 Semi Bold */
+  --netti-text-style-body-md: 400 16px/24px Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; /** Body — 16/24 Regular */
+  --netti-text-style-body-sm: 400 14px/20px Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; /** Small body — 14/20 Regular */
+  --netti-text-style-label-sm: 600 14px/20px Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; /** Label — 14/20 Semi Bold */
+  --netti-text-style-caption: 500 12px/16px Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; /** Caption / eyebrow — 12/16 Medium, uppercase */
+}
 
-  /* Marketing-site-only tokens: no equivalent in the app design system (mobile app has
-     no hero/section layout components), composed from the core spacing/radius/color scale
-     above rather than inventing off-system values. Flagged per PRD §5. */
-  --netti-web-maxw: 1180px;
-  --netti-web-maxw-legal: 760px;
-  --netti-web-section-y: 96px;
-  --netti-web-section-y-sm: 56px;
+[data-theme="dark"] {
+  --netti-color-surface: #010045; /** Themed card/page surface (dark mode) */
+  --netti-color-surface-raised: #0e1868; /** Themed raised surface — toggle bar, insets (dark mode) */
+  --netti-color-surface-border: #07205e; /** Themed border on a surface (dark mode) */
+  --netti-color-on-surface: #ffffff; /** Themed primary text on a surface (dark mode) */
+  --netti-color-on-surface-muted: rgba(255, 255, 255, 0.7); /** Themed secondary text on a surface (dark mode) */
+  --netti-color-on-surface-faint: rgba(255, 255, 255, 0.5); /** Themed tertiary / hint text on a surface (dark mode) */
+  --netti-color-divider: rgba(255, 255, 255, 0.1); /** Themed divider/separator on a surface (dark mode) */
+  --netti-color-surface-overlay: rgba(255, 255, 255, 0.12); /** Themed subtle fill on a surface — chips, hover, remove (dark mode) */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-appearance="auto"] {
+    --netti-color-background-screen: #0a0a10;
+    --netti-color-background-card: #0e1868;
+    --netti-color-background-card-subtle: #07205e;
+    --netti-color-background-card-border: #07205e;
+    --netti-color-background-surface: #1a1a23;
+    --netti-color-background-surface-raised: #292933;
+    --netti-color-background-highlight: #0e1868;
+    --netti-color-background-app: #0a0a10;
+    --netti-color-background-hero: #0e1868;
+    --netti-color-background-sheet: #1a1a23;
+    --netti-color-background-sheet-surface: #292933;
+    --netti-color-background-hero-tag: rgba(255, 255, 255, 0.2);
+    --netti-color-text-primary: #ffffff;
+    --netti-color-text-secondary: rgba(255, 255, 255, 0.7);
+    --netti-color-text-muted: rgba(255, 255, 255, 0.5);
+    --netti-color-text-inverse: #00021b;
+    --netti-color-text-positive: #00c950;
+    --netti-color-text-negative: #ff8a85;
+    --netti-color-text-brand: #a8eff7;
+    --netti-color-text-on-hero: #ffffff;
+    --netti-color-text-on-hero-muted: rgba(255, 255, 255, 0.7);
+    --netti-color-action-primary-bg: #26d4eb;
+    --netti-color-action-primary-text: #010045;
+    --netti-color-action-secondary-border: #26d4eb;
+    --netti-color-action-selected-border: #26d4eb;
+    --netti-color-action-selected-bg: #292933;
+    --netti-color-border-default: rgba(255, 255, 255, 0.1);
+    --netti-color-border-strong: rgba(255, 255, 255, 0.2);
+    --netti-color-border-inverse: #07205e;
+    --netti-color-border-focus: #26d4eb;
+    --netti-color-border-hero: #07205e;
+    --netti-color-status-positive-text: #00c950;
+    --netti-color-status-positive-bg: #0a3d22;
+    --netti-color-status-negative-text: #ff8a85;
+    --netti-color-status-negative-bg: #4a0a0e;
+  }
 }
