@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB" data-appearance="auto">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Netti — Know what you actually take home | UK Take-Home Pay Calculator</title>
-<meta name="description" content="Netti turns your gross UK salary into the number that matters — tax, National Insurance, pension and student loan worked out, plus bonus and job-offer modelling with Netti Pro.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Netti: UK take-home pay and salary after tax calculator for iPhone</title>
+<meta name="description" content="Work out your UK salary after tax on iPhone. Netti shows your net pay after PAYE Income Tax, National Insurance, pension and student loan, line by line like a payslip.">
 <link rel="canonical" href="https://netti-app.com/">
+<meta name="theme-color" content="#f3f4f6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a10" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Netti — Know what you actually take home">
-<meta property="og:description" content="Netti turns your gross UK salary into the number that matters — tax, National Insurance, pension and student loan worked out, so you always know what's really yours.">
-<meta property="og:url" content="https://netti-app.com/">
 <meta property="og:site_name" content="Netti">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://netti-app.com/">
+<meta property="og:title" content="Netti: your take-home pay, in seconds">
+<meta property="og:description" content="UK take-home pay calculator for iPhone. Income Tax, National Insurance, pension and student loan, line by line, on HMRC's 2026–27 rates. No account, no ads, no tracking.">
+<meta property="og:image" content="https://netti-app.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Netti: your take-home pay, in seconds. £3,173 a month take home on £48,000, after tax and National Insurance.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Netti: your take-home pay, in seconds">
+<meta name="twitter:description" content="UK take-home pay calculator for iPhone. Income Tax, National Insurance, pension and student loan, line by line, on HMRC's 2026–27 rates. No account, no ads, no tracking.">
+<meta name="twitter:image" content="https://netti-app.com/assets/og-image.png">
+<meta name="twitter:image:alt" content="Netti: your take-home pay, in seconds. £3,173 a month take home on £48,000, after tax and National Insurance.">
 
 <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link rel="preload" href="assets/fonts/inter-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/styles.css">
 
@@ -23,25 +37,31 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Netti",
-  "operatingSystem": "iOS",
-  "applicationCategory": "FinanceApplication",
+  "description": "A UK take-home pay calculator for iPhone. It works out Income Tax, National Insurance, pension and student loan on HMRC's 2026–27 rates. Netti Pro, a one-off in-app purchase, adds extra income, Compare and salary sacrifice.",
   "url": "https://netti-app.com/",
+  "downloadUrl": "https://apps.apple.com/gb/app/netti/id6758891231",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "iOS 17.0 or later",
+  "softwareVersion": "3.2.1",
+  "contentRating": "4+",
+  "inLanguage": "en-GB",
+  "publisher": { "@type": "Organization", "name": "SquaredMc Ltd" },
   "offers": [
     {
       "@type": "Offer",
-      "name": "Netti (free)",
+      "name": "Netti",
+      "description": "Free to download",
       "price": "0",
       "priceCurrency": "GBP"
     },
     {
       "@type": "Offer",
       "name": "Netti Pro",
+      "description": "One-off in-app purchase, not a subscription",
       "price": "3.99",
       "priceCurrency": "GBP"
     }
-  ],
-  "downloadUrl": "https://apps.apple.com/gb/app/netti/id6758891231",
-  "description": "Netti is a UK take-home pay calculator that works out tax, National Insurance, pension and student loan deductions, with bonus, overtime and job-offer modelling in Netti Pro."
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -51,53 +71,58 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is Netti free to use?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The core calculator — salary, tax, National Insurance, pension and student loan — is free. Netti Pro is a one-off £3.99 unlock for bonus, overtime and job-offer modelling." }
+      "name": "Is Netti free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The calculator is free to download and use, with no ads. Netti Pro is an optional one-off purchase, £3.99 in the UK, that adds extra income, Compare and salary sacrifice." }
     },
     {
       "@type": "Question",
       "name": "What does Netti Pro unlock?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Bonus, overtime and commission modelling, marginal tax insight (what your next £1 is worth), and side-by-side salary and offer comparison. It's a single one-off payment, not a subscription." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Three things. Extra income: a bonus, overtime, commission or a single payment, and how each is taxed. Compare: a job offer next to what you take home now. Salary sacrifice: what a Cycle to Work bike or an electric car through work really costs, after the tax and National Insurance saved. It is one payment, not a subscription." }
     },
     {
       "@type": "Question",
       "name": "Is my salary information private?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Everything you enter — salary, tax code, pension, income figures — is calculated and stored locally on your device. It's never transmitted to or stored on Netti's servers." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Everything you enter stays on your iPhone and is never sent to us. There is no account, no ads and no tracking." }
     },
     {
       "@type": "Question",
       "name": "Do I need to create an account?",
-      "acceptedAnswer": { "@type": "Answer", "text": "No. Netti works fully without sign-up — just install and enter your numbers." }
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Open Netti and enter your salary." }
     },
     {
       "@type": "Question",
-      "name": "Does Netti work for Scotland, Wales and Northern Ireland, not just England?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Netti applies the correct regional Income Tax bands, including Scotland's separate rate structure." }
+      "name": "Does Netti work for Scotland, Wales and Northern Ireland?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Choose England, Wales and Northern Ireland, or Scotland, and Netti uses that region’s Income Tax bands." }
     },
     {
       "@type": "Question",
-      "name": "Does Netti handle student loans and pension contributions?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. All current UK student loan plans (1, 2, 4, 5, and Postgraduate) are supported, along with both salary sacrifice and relief-at-source pension contributions." }
+      "name": "Does Netti handle student loans and pensions?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, in the free calculator. Student loan Plans 1, 2, 4 and 5 and Postgraduate, and pensions by salary sacrifice or relief at source." }
     },
     {
       "@type": "Question",
-      "name": "Is Netti kept up to date with the current tax year?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Netti's calculations use the current UK tax year's rates and thresholds, and are updated as they change." }
+      "name": "Is Netti up to date with this tax year?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Netti uses HMRC’s 2026–27 rates and thresholds, and is updated when they change." }
     },
     {
       "@type": "Question",
-      "name": "Is Netti available on Android?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Not yet — Android support is on the roadmap. Netti is currently available on iOS only." }
+      "name": "I’m moving to the UK. Can I use Netti?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Netti shows what a UK salary leaves you with after UK Income Tax, National Insurance and pension, so you can see it before you arrive. It works out UK tax only, not tax in any other country." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Netti available on Android or iPad?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not yet. Netti is for iPhone, with iOS 17 or later. An Android version is being built." }
     },
     {
       "@type": "Question",
       "name": "Does Netti give financial or tax advice?",
-      "acceptedAnswer": { "@type": "Answer", "text": "No. Netti is a calculator, not financial advice." }
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Netti gives estimates for guidance only. Your payslip may differ because of cumulative PAYE, tax code changes or how your employer runs payroll. Netti is not financial or tax advice." }
     },
     {
       "@type": "Question",
-      "name": "How do I get support or report an issue?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Email us at hello@squaredmc.com." }
+      "name": "How do I get support?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Email hello@squaredmc.com and we’ll reply." }
     }
   ]
 }
@@ -105,265 +130,419 @@
 </head>
 <body>
 
-<header>
-  <div class="wrap nav">
-    <a class="logo" href="#top" aria-label="Netti home">
-      <img src="assets/icons/logo-white.svg" alt="Netti" width="72" height="24">
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="#top">
+      <img src="assets/icons/favicon.svg" alt="" width="32" height="32">
+      <span>Netti</span>
     </a>
-    <nav aria-label="Primary">
-      <ul class="nav-links">
-        <li><a href="#how-it-works">How it works</a></li>
-        <li><a href="#case-study">Worked example</a></li>
-        <li><a href="#pro">Netti Pro</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </nav>
-    <div class="nav-cta">
-      <a class="btn btn-lg btn-primary" href="#download">Get the app</a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
-        <span></span>
+    <ul class="nav-links">
+      <li><a href="#change">How it works</a></li>
+      <li><a href="#pro">Netti Pro</a></li>
+      <li><a href="#example">Worked example</a></li>
+      <li><a href="#privacy">Privacy</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn" href="#download">Get<span class="nav-cta-more">&nbsp;the app</span></a>
+      <button class="icon-btn menu-button" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span class="visually-hidden">Menu</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
     </div>
-  </div>
-  <nav id="mobile-nav" class="mobile-nav wrap" aria-label="Mobile">
-    <ul>
-      <li><a href="#how-it-works">How it works</a></li>
-      <li><a href="#case-study">Worked example</a></li>
+  </nav>
+  <nav id="site-menu" class="menu-panel" aria-label="Menu" hidden>
+    <ul class="wrap">
+      <li><a href="#change">How it works</a></li>
       <li><a href="#pro">Netti Pro</a></li>
+      <li><a href="#example">Worked example</a></li>
+      <li><a href="#privacy">Privacy</a></li>
       <li><a href="#faq">FAQ</a></li>
-      <li><a href="#about">About</a></li>
     </ul>
-    <a class="btn btn-lg btn-primary" href="#download" style="width:100%;">Get the app</a>
   </nav>
 </header>
 
 <main id="top">
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="wrap">
-      <div class="hero-copy">
-        <span class="eyebrow eyebrow--on-light">UK take-home pay, made honest</span>
-        <h1>Know what you actually take home.</h1>
-        <p class="hero-sub">Netti turns your gross salary into the number that matters — tax, National Insurance, pension and student loan all worked out, so you always know what's really yours.</p>
-        <div class="hero-ctas">
-          <a class="app-store-badge btn btn-primary" href="https://apps.apple.com/gb/app/netti/id6758891231" aria-label="Download Netti on the App Store">
-            Download on the App Store
+  <section class="section" aria-labelledby="hero-title">
+    <div class="wrap grid-hero">
+      <div class="stack stack-24">
+        <p class="eyebrow">UK take-home pay calculator · 2026–27 tax year</p>
+        <h1 id="hero-title" class="display">Your take-home pay, in seconds.</h1>
+        <p class="lead lead--narrow">Enter your salary and Netti shows what you take home after Income Tax, National Insurance, pension and student loan, with every deduction set out line by line.</p>
+        <div class="badge-row">
+          <a class="app-store-badge" href="https://apps.apple.com/gb/app/netti/id6758891231">
+            <img src="assets/icons/app-store-badge-black-en-gb.svg" alt="Download on the App Store" width="144" height="48">
           </a>
-          <a class="btn btn-outline" href="#case-study">See a worked example ↓</a>
+          <span class="small muted">Free · iPhone, iOS 17 and later</span>
         </div>
-        <p class="hero-support">Free to use. Netti Pro unlocks bonus, overtime and offer comparisons for a one-off £3.99.</p>
+        <ul class="chips">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>No account</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>No ads</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>No tracking</li>
+        </ul>
       </div>
-      <div class="hero-visual">
-        <div class="phone-frame">
-          <img src="assets/screenshots/hero.png" alt="Netti's Take home screen: £3,402 a month from a £45,000 salary, with pension, salary sacrifice, student loan, tax code and extra income listed below" width="640" height="1391" loading="eager">
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Value props -->
-  <section id="value-props">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow eyebrow--on-light">Why Netti</span>
-        <h2>The questions your payslip doesn't answer.</h2>
-      </div>
-      <div class="card-grid">
-        <div class="value-card">
-          <div class="icon" aria-hidden="true">£</div>
-          <h3>What's my actual take-home?</h3>
-          <p>Enter your salary once and see the real monthly number after tax, NI, pension and student loan — not just the headline figure.</p>
-        </div>
-        <div class="value-card">
-          <div class="icon" aria-hidden="true">+</div>
-          <h3>What happens if I get a bonus?</h3>
-          <p>Model a bonus, overtime or commission payment and see exactly how much of it you actually keep, before it lands.</p>
-        </div>
-        <div class="value-card">
-          <div class="icon" aria-hidden="true">⇄</div>
-          <h3>Is this new offer actually better?</h3>
-          <p>Compare your current salary against a job offer side by side, and see the real difference — not just the number on the letter.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- How it works -->
-  <section id="how-it-works" style="background:var(--netti-color-background-surface-raised);">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow eyebrow--on-light">How it works</span>
-        <h2>Three steps to your real number.</h2>
-      </div>
-      <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-shot">
-            <img src="assets/screenshots/step-1-enter-salary.png" alt="Netti asking “What do you earn?”, with a £45,000 yearly salary entered" width="882" height="715" loading="lazy">
+      <figure class="hero-figure">
+        <div class="phone">
+          <div class="phone-screen" id="hero-screen" role="img" aria-label="Netti's Take home screen: a £48,000 salary is entered and the take home rolls to £3,173 a month, then switches between yearly, weekly and daily" data-still-label="Netti's Take home screen: £3,173 a month take home on a £48,000 salary, after tax and National Insurance">
+            <video class="hero-video hero-video--light" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-light-poster.jpg" width="600" height="1304">
+              <source src="assets/video/hero-light.mp4" type="video/mp4">
+            </video>
+            <video class="hero-video hero-video--dark" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-dark-poster.jpg" width="600" height="1304">
+              <source src="assets/video/hero-dark.mp4" type="video/mp4">
+            </video>
+            <picture class="hero-poster">
+              <source media="(prefers-color-scheme: dark)" type="image/webp" srcset="assets/video/hero-dark-poster.webp">
+              <source media="(prefers-color-scheme: dark)" srcset="assets/video/hero-dark-poster.jpg">
+              <source type="image/webp" srcset="assets/video/hero-light-poster.webp">
+              <img src="assets/video/hero-light-poster.jpg" alt="" width="600" height="1304">
+            </picture>
           </div>
-          <span class="step-number">1</span>
-          <h3>Enter your salary</h3>
-          <p>Gross pay, tax code, pension contribution and student loan plan — takes under a minute.</p>
         </div>
-        <div class="step-card">
-          <div class="step-shot">
-            <img src="assets/screenshots/step-2-breakdown.png" alt="Netti's breakdown per month: gross pay, pension, income tax and National Insurance, leaving £3,401.53 take home" width="882" height="715" loading="lazy">
+        <figcaption class="hero-caption">
+          <button class="icon-btn hero-pause" type="button" aria-pressed="false" aria-controls="hero-screen" hidden>
+            <span class="visually-hidden">Pause the recording</span>
+            <svg class="icon-pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg class="icon-play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg>
+          </button>
+          <span class="small muted">£48,000 a year in England, tax code 1257L.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="change" class="section section--surface" aria-labelledby="change-title">
+    <div class="wrap grid-split">
+      <div class="stack stack-20">
+        <p class="eyebrow">How it works</p>
+        <h2 id="change-title" class="section-title">See each change as you make it</h2>
+        <p class="lead">Change your pension, loan or tax code, and Netti shows the difference straight away, right beside your take home.</p>
+        <ol class="steps">
+          <li><span class="step-number" aria-hidden="true">1</span><span><strong class="strong">Enter your salary.</strong> <span class="muted">Just the figure on your contract.</span></span></li>
+          <li><span class="step-number" aria-hidden="true">2</span><span><strong class="strong">Set what comes off.</strong> <span class="muted">Pension, student loan, tax code and region.</span></span></li>
+          <li><span class="step-number" aria-hidden="true">3</span><span><strong class="strong">See your take home.</strong> <span class="muted">And what every change did to it.</span></span></li>
+        </ol>
+      </div>
+
+      <div class="card card--app demo" data-pension-demo>
+        <div class="demo-head">
+          <p id="pen-label" class="small strong">Pension, by salary sacrifice</p>
+          <div class="segmented" role="group" aria-labelledby="pen-label">
+            <button class="segment" type="button" aria-pressed="false" data-pension="0">Off</button>
+            <button class="segment" type="button" aria-pressed="false" data-pension="3">3%</button>
+            <button class="segment" type="button" aria-pressed="true" data-pension="5">5%</button>
+            <button class="segment" type="button" aria-pressed="false" data-pension="8">8%</button>
           </div>
-          <span class="step-number">2</span>
-          <h3>See the full breakdown</h3>
-          <p>Tax bands, NI, pension and take-home pay, broken down monthly and annually — no guesswork.</p>
         </div>
-        <div class="step-card">
-          <div class="step-shot">
-            <img src="assets/screenshots/step-3-scenarios.png" alt="Netti's Extra income sheet with an £800 monthly bonus and £320 of overtime" width="882" height="715" loading="lazy">
+        <div class="take-home on-hero" aria-live="polite" aria-atomic="true">
+          <p class="eyebrow">Take home</p>
+          <div class="take-home-row">
+            <p class="take-home-figure" data-out="figure">£3,029</p>
+            <span class="change-chip" data-out="chip">£144 less</span>
           </div>
-          <span class="step-number">3</span>
-          <h3>Model real scenarios</h3>
-          <p>Bonus, overtime, raises, job offers — with Netti Pro, see the marginal impact of every extra £1.</p>
+          <p class="small take-home-sub" data-out="sub">a month, after tax, National Insurance and 5% pension</p>
+        </div>
+        <div class="inset breakdown">
+          <p class="breakdown-title">Per month</p>
+          <dl class="stack stack-6">
+            <div class="line"><dt>Gross pay</dt><dd>£4,000.00</dd></div>
+            <div class="line"><dt>Pension</dt><dd class="negative" data-out="pension">−£200.00</dd></div>
+            <div class="line"><dt>Income tax</dt><dd class="negative" data-out="tax">−£550.50</dd></div>
+            <div class="line"><dt>National Insurance</dt><dd class="negative" data-out="ni">−£220.20</dd></div>
+            <div class="line line--total"><dt>Take home</dt><dd class="positive" data-out="home">£3,029.30</dd></div>
+          </dl>
+        </div>
+        <p class="small muted">£48,000 a year, England, tax code 1257L, no student loan. Salary sacrifice comes off before tax and National Insurance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="free" class="section" aria-labelledby="free-title">
+    <div class="wrap stack stack-40">
+      <div class="stack stack-16 measure">
+        <p class="eyebrow">Free calculator</p>
+        <h2 id="free-title" class="section-title">Every deduction, line by line</h2>
+        <p class="lead">Yearly, monthly, weekly or daily, using HMRC's 2026–27 rates and thresholds.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card feature-card">
+          <svg class="icon-brand" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>
+          <h3 class="card-title">Take home first</h3>
+          <p class="muted">The figure you care about leads, with Income Tax, National Insurance, pension and student loan set out under it.</p>
+        </div>
+        <div class="card feature-card">
+          <svg class="icon-brand" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <h3 class="card-title">Tax code and region</h3>
+          <p class="muted">England, Wales and Northern Ireland, or Scotland with its own Income Tax bands. Enter the code from your payslip.</p>
+        </div>
+        <div class="card feature-card">
+          <svg class="icon-brand" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h16v10H4z"/><path d="M2 10 12 4l10 6"/><path d="M8 14v3M12 14v3M16 14v3"/></svg>
+          <h3 class="card-title">Pension</h3>
+          <p class="muted">By salary sacrifice or relief at source, and see the difference each makes.</p>
+        </div>
+        <div class="card feature-card">
+          <svg class="icon-brand" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 9 12 4 2 9l10 5 10-5Z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+          <h3 class="card-title">Student loan</h3>
+          <p class="muted">Plans 1, 2, 4 and 5, and Postgraduate, together or on their own.</p>
+        </div>
+        <div class="card feature-card">
+          <svg class="icon-brand" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18Z" fill="currentColor"/></svg>
+          <h3 class="card-title">Light or dark, like your iPhone</h3>
+          <p class="muted">And every text size, up to the largest, with full VoiceOver support.</p>
+        </div>
+        <div class="card feature-card">
+          <svg class="icon-brand" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          <h3 class="card-title">Three steps to start</h3>
+          <p class="muted">Your salary, what comes off, your take home. No sign-up screen in the way.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Worked example -->
-  <section id="case-study" class="case-study">
+  <section id="pro" class="section section--flush-top" aria-labelledby="pro-title">
     <div class="wrap">
-      <div class="case-study-copy">
-        <span class="eyebrow eyebrow--on-light">Worked example</span>
-        <h2>What does a £5,000 bonus actually pay?</h2>
-        <p>A common question with a less common answer. Here's how it plays out for someone on a £48,000 salary.</p>
-        <p>The scenario: £48,000 base salary, standard tax code, no other income, receiving a one-off £5,000 bonus in the same tax month.</p>
-        <p>Because the bonus pushes part of that month's pay into the higher tax band, it's taxed at a higher marginal rate than the rest of the salary — which is why the amount that actually lands is often smaller than people expect.</p>
-        <p>This is exactly the kind of question Netti Pro is built to answer before the money arrives, not after.</p>
-        <a class="btn btn-primary" href="#download">Try it with your numbers</a>
-      </div>
-      <div class="breakdown-table">
-        <table>
-          <caption>Bonus breakdown</caption>
-          <thead>
-            <tr><th scope="col">Item</th><th scope="col">Amount</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Gross bonus</td><td>£5,000</td></tr>
-            <tr class="negative"><td>Income tax</td><td>−£1,546</td></tr>
-            <tr class="negative"><td>National Insurance</td><td>−£236</td></tr>
-            <tr class="total"><td>You actually keep</td><td>£3,218</td></tr>
-          </tbody>
-        </table>
-        <p class="disclaimer">Illustrative figures for a 2026/27-style example — Netti's in-app calculation keeps pace with current tax year rates and your exact tax code. Not tax advice.</p>
+      <div class="panel on-hero stack stack-40">
+        <div class="pro-head">
+          <div class="stack stack-16 measure">
+            <span class="pro-tag">Netti Pro</span>
+            <h2 id="pro-title" class="section-title">One unlock. No subscription.</h2>
+            <p class="lead muted">Three tools for the bigger questions about your pay, unlocked with a single in-app purchase.</p>
+          </div>
+          <div class="stack stack-2">
+            <p class="price">£3.99</p>
+            <p class="small muted">One-off, in the UK</p>
+          </div>
+        </div>
+        <div class="grid-pro">
+          <div class="pro-card">
+            <h3>Compare a job offer with now</h3>
+            <p class="muted">The difference in take home, not just in salary.</p>
+            <div class="mini-phone">
+              <picture>
+                <source media="(prefers-color-scheme: dark)" type="image/webp" srcset="assets/screens/compare-better-dark.webp 1x, assets/screens/compare-better-dark@2x.webp 2x">
+                <source media="(prefers-color-scheme: dark)" srcset="assets/screens/compare-better-dark.jpg 1x, assets/screens/compare-better-dark@2x.jpg 2x">
+                <source type="image/webp" srcset="assets/screens/compare-better-light.webp 1x, assets/screens/compare-better-light@2x.webp 2x">
+                <img src="assets/screens/compare-better-light.jpg" srcset="assets/screens/compare-better-light@2x.jpg 2x" alt="Netti's Compare screen, showing a job offer's take home beside the current one" width="204" height="254" loading="lazy">
+              </picture>
+            </div>
+          </div>
+          <div class="pro-card">
+            <h3>What a bike or car really costs</h3>
+            <p class="muted">Salary sacrifice, with the tax and NI you save taken off.</p>
+            <div class="mini-phone">
+              <picture>
+                <source media="(prefers-color-scheme: dark)" type="image/webp" srcset="assets/screens/scheme-bike-dark.webp 1x, assets/screens/scheme-bike-dark@2x.webp 2x">
+                <source media="(prefers-color-scheme: dark)" srcset="assets/screens/scheme-bike-dark.jpg 1x, assets/screens/scheme-bike-dark@2x.jpg 2x">
+                <source type="image/webp" srcset="assets/screens/scheme-bike-light.webp 1x, assets/screens/scheme-bike-light@2x.webp 2x">
+                <img src="assets/screens/scheme-bike-light.jpg" srcset="assets/screens/scheme-bike-light@2x.jpg 2x" alt="Netti's Cycle to Work screen: a £1,000 bike costs £720 after tax and National Insurance saved" width="204" height="254" loading="lazy">
+              </picture>
+            </div>
+          </div>
+          <div class="pro-card">
+            <h3>Bonus, overtime and commission</h3>
+            <p class="muted">Extra pay, taxed on top of your salary, or a single payment.</p>
+            <div class="mini-phone">
+              <picture>
+                <source media="(prefers-color-scheme: dark)" type="image/webp" srcset="assets/screens/income-bonus-dark.webp 1x, assets/screens/income-bonus-dark@2x.webp 2x">
+                <source media="(prefers-color-scheme: dark)" srcset="assets/screens/income-bonus-dark.jpg 1x, assets/screens/income-bonus-dark@2x.jpg 2x">
+                <source type="image/webp" srcset="assets/screens/income-bonus-light.webp 1x, assets/screens/income-bonus-light@2x.webp 2x">
+                <img src="assets/screens/income-bonus-light.jpg" srcset="assets/screens/income-bonus-light@2x.jpg 2x" alt="Netti's extra income screen, adding a bonus" width="204" height="254" loading="lazy">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="pro-foot">
+          <a class="btn btn--lg" href="#download">Get Netti free, then unlock Pro</a>
+          <p class="small muted">Bought once with your Apple ID. Restore it from the app's settings.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Netti Pro teaser -->
-  <section id="pro" class="pro-panel">
-    <div class="wrap">
-      <div>
-        <span class="eyebrow">Netti Pro</span>
-        <h2>One unlock. No subscription.</h2>
-        <p class="body-copy">Everything you need to model real income decisions — bonus, overtime, commission, and job offers — for a single one-off payment.</p>
-        <a class="btn btn-lg btn-on-dark" href="#download">Unlock Netti Pro — £3.99</a>
+  <section id="example" class="section section--surface" aria-labelledby="example-title">
+    <div class="wrap grid-split">
+      <div class="stack stack-20">
+        <p class="eyebrow">Worked example</p>
+        <h2 id="example-title" class="section-title">A £5,000 bonus keeps £3,218</h2>
+        <p class="lead">On a £48,000 salary, part of a £5,000 bonus lands in the 40% band. Netti shows how much of it you actually keep, before it reaches your payslip.</p>
+        <dl class="facts small">
+          <dt>Salary</dt><dd>£48,000 a year</dd>
+          <dt>Where</dt><dd>England, tax code 1257L</dd>
+          <dt>Pension, loan</dt><dd>None</dd>
+          <dt>Rates</dt><dd>HMRC 2026–27, worked out by Netti's own tax engine</dd>
+        </dl>
       </div>
-      <ul class="pro-features">
-        <li><span class="check" aria-hidden="true">✓</span> Bonus, overtime &amp; commission modelling</li>
-        <li><span class="check" aria-hidden="true">✓</span> Marginal tax insight — what your next £1 is worth</li>
-        <li><span class="check" aria-hidden="true">✓</span> One-off payment, yours for good</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow eyebrow--on-light">FAQ</span>
-        <h2>Common questions.</h2>
-      </div>
-      <div class="faq-list">
-        <details class="faq-item">
-          <summary>Is Netti free to use?</summary>
-          <p>Yes. The core calculator — salary, tax, National Insurance, pension and student loan — is free. Netti Pro is a one-off £3.99 unlock for bonus, overtime and job-offer modelling.</p>
-        </details>
-        <details class="faq-item">
-          <summary>What does Netti Pro unlock?</summary>
-          <p>Bonus, overtime and commission modelling, marginal tax insight (what your next £1 is worth), and side-by-side salary and offer comparison. It's a single one-off payment, not a subscription.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Is my salary information private?</summary>
-          <p>Yes. Everything you enter — salary, tax code, pension, income figures — is calculated and stored locally on your device. It's never transmitted to or stored on Netti's servers.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Do I need to create an account?</summary>
-          <p>No. Netti works fully without sign-up — just install and enter your numbers.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Does Netti work for Scotland, Wales and Northern Ireland, not just England?</summary>
-          <p>Yes. Netti applies the correct regional Income Tax bands, including Scotland's separate rate structure.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Does Netti handle student loans and pension contributions?</summary>
-          <p>Yes. All current UK student loan plans (1, 2, 4, 5, and Postgraduate) are supported, along with both salary sacrifice and relief-at-source pension contributions.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Is Netti kept up to date with the current tax year?</summary>
-          <p>Yes. Netti's calculations use the current UK tax year's rates and thresholds, and are updated as they change.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Is Netti available on Android?</summary>
-          <p>Not yet — Android support is on the roadmap. Netti is currently available on iOS only.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Does Netti give financial or tax advice?</summary>
-          <p>No. Netti is a calculator, not financial advice.</p>
-        </details>
-        <details class="faq-item">
-          <summary>How do I get support or report an issue?</summary>
-          <p>Email us at <a href="mailto:hello@squaredmc.com">hello@squaredmc.com</a>.</p>
-        </details>
+      <div class="card card--app card-pad stack stack-20 tabular">
+        <div class="line">
+          <span class="muted">Take home before the bonus</span>
+          <span class="strong">£38,079.60 a year</span>
+        </div>
+        <div class="inset bonus">
+          <div class="line strong"><span>Bonus</span><span>£5,000.00</span></div>
+          <div class="split-bar" role="img" aria-label="Of the £5,000 bonus, £3,217.80 is kept and £1,782.20 goes to Income Tax and National Insurance">
+            <span class="fill-kept" style="flex: 3217.8"></span>
+            <span class="fill-basic" style="flex: 635.6"></span>
+            <span class="fill-higher" style="flex: 1146.6"></span>
+          </div>
+          <dl class="stack stack-12">
+            <div class="line small"><dt class="legend"><span class="swatch fill-basic" aria-hidden="true"></span>£2,270 up to £50,270, at 20% tax + 8% NI</dt><dd class="negative">−£635.60</dd></div>
+            <div class="line small"><dt class="legend"><span class="swatch fill-higher" aria-hidden="true"></span>£2,730 above it, at 40% tax + 2% NI</dt><dd class="negative">−£1,146.60</dd></div>
+            <div class="line line--total you-keep"><dt>You keep</dt><dd class="positive">£3,217.80</dd></div>
+          </dl>
+        </div>
+        <p class="small muted">Bonus modelling is part of Netti Pro. An estimate for guidance: your payslip may differ.</p>
       </div>
     </div>
   </section>
 
-  <!-- Download CTA -->
-  <section id="download" class="download-cta">
+  <section id="moving" class="section" aria-labelledby="moving-title">
+    <div class="wrap grid-split">
+      <div class="stack stack-20">
+        <p class="eyebrow">New to the UK</p>
+        <h2 id="moving-title" class="section-title">Moving to the UK for work?</h2>
+        <p class="lead">See what a UK salary leaves you with before you arrive. Enter the offer and Netti shows your take home after UK Income Tax, National Insurance and pension.</p>
+        <p class="small muted">Netti works out UK tax only. It doesn't cover tax in any other country.</p>
+      </div>
+      <div class="card card-pad stack stack-16">
+        <div class="point">
+          <svg class="icon-brand" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9Z"/></svg>
+          <div><p class="strong">On the App Store in 147 countries and regions</p><p class="small muted">Download it wherever you are now, at your App Store's own price for Pro.</p></div>
+        </div>
+        <div class="point">
+          <svg class="icon-brand" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10H7z"/><path d="M3 12h4M17 12h4M12 3v4M12 17v4"/></svg>
+          <div><p class="strong">Compare an offer with your pay now</p><p class="small muted">With Netti Pro, put a UK offer next to another UK salary.</p></div>
+        </div>
+        <div class="point">
+          <svg class="icon-brand" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg>
+          <div><p class="strong">Every deduction named</p><p class="small muted">Income Tax, National Insurance, pension and student loan, line by line.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy" class="section section--surface" aria-labelledby="privacy-title">
+    <div class="wrap stack stack-40">
+      <div class="stack stack-16 measure">
+        <p class="eyebrow">Privacy</p>
+        <h2 id="privacy-title" class="section-title">Your salary stays on your phone</h2>
+        <p class="lead">No account and no sign-in. Everything you enter stays on your iPhone, and this website doesn't track you either.</p>
+      </div>
+      <div class="grid-4">
+        <div class="tile">
+          <svg class="icon-brand" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/><path d="M3 3l18 18"/></svg>
+          <p class="strong">No account</p><p class="small muted">Open it and enter a salary.</p>
+        </div>
+        <div class="tile">
+          <svg class="icon-brand" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 3l18 18"/></svg>
+          <p class="strong">No ads</p><p class="small muted">None in the app, free or Pro.</p>
+        </div>
+        <div class="tile">
+          <svg class="icon-brand" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><path d="M3 3l18 18"/></svg>
+          <p class="strong">No tracking</p><p class="small muted">No analytics in the app or on this site.</p>
+        </div>
+        <div class="tile">
+          <svg class="icon-brand" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></svg>
+          <p class="strong">Stays on your iPhone</p><p class="small muted">Nothing you enter is sent to us.</p>
+        </div>
+      </div>
+      <p class="small muted">Apple handles the Netti Pro purchase. <a href="privacy.html">Read the Privacy Policy</a></p>
+    </div>
+  </section>
+
+  <section id="faq" class="section" aria-labelledby="faq-title">
+    <div class="wrap grid-split grid-split--top">
+      <div class="stack stack-16">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-title" class="section-title">Questions, answered</h2>
+        <p class="lead">Something else? Email <a href="mailto:hello@squaredmc.com">hello@squaredmc.com</a></p>
+      </div>
+      <div class="card faq" data-faq>
+        <details>
+          <summary>Is Netti free?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Yes. The calculator is free to download and use, with no ads. Netti Pro is an optional one-off purchase, £3.99 in the UK, that adds extra income, Compare and salary sacrifice.</p>
+        </details>
+        <details>
+          <summary>What does Netti Pro unlock?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Three things. Extra income: a bonus, overtime, commission or a single payment, and how each is taxed. Compare: a job offer next to what you take home now. Salary sacrifice: what a Cycle to Work bike or an electric car through work really costs, after the tax and National Insurance saved. It is one payment, not a subscription.</p>
+        </details>
+        <details>
+          <summary>Is my salary information private?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Yes. Everything you enter stays on your iPhone and is never sent to us. There is no account, no ads and no tracking.</p>
+        </details>
+        <details>
+          <summary>Do I need to create an account?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>No. Open Netti and enter your salary.</p>
+        </details>
+        <details>
+          <summary>Does Netti work for Scotland, Wales and Northern Ireland?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Yes. Choose England, Wales and Northern Ireland, or Scotland, and Netti uses that region’s Income Tax bands.</p>
+        </details>
+        <details>
+          <summary>Does Netti handle student loans and pensions?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Yes, in the free calculator. Student loan Plans 1, 2, 4 and 5 and Postgraduate, and pensions by salary sacrifice or relief at source.</p>
+        </details>
+        <details>
+          <summary>Is Netti up to date with this tax year?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Netti uses HMRC’s 2026–27 rates and thresholds, and is updated when they change.</p>
+        </details>
+        <details>
+          <summary>I’m moving to the UK. Can I use Netti?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Yes. Netti shows what a UK salary leaves you with after UK Income Tax, National Insurance and pension, so you can see it before you arrive. It works out UK tax only, not tax in any other country.</p>
+        </details>
+        <details>
+          <summary>Is Netti available on Android or iPad?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Not yet. Netti is for iPhone, with iOS 17 or later. An Android version is being built.</p>
+        </details>
+        <details>
+          <summary>Does Netti give financial or tax advice?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>No. Netti gives estimates for guidance only. Your payslip may differ because of cumulative PAYE, tax code changes or how your employer runs payroll. Netti is not financial or tax advice.</p>
+        </details>
+        <details>
+          <summary>How do I get support?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Email <a href="mailto:hello@squaredmc.com">hello@squaredmc.com</a> and we’ll reply.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="section section--flush-top" aria-labelledby="dl-title">
     <div class="wrap">
-      <span class="eyebrow eyebrow--on-light">Get started</span>
-      <h2>Download Netti, free.</h2>
-      <p>Available now on iOS. Pension and student loan calculations are always free — Pro unlocks the advanced income modelling.</p>
-      <div class="hero-ctas">
-        <a class="app-store-badge btn btn-lg btn-primary" href="https://apps.apple.com/gb/app/netti/id6758891231" aria-label="Download Netti on the App Store">
-          Download on the App Store
+      <div class="panel on-hero download">
+        <img class="download-mark" src="assets/icons/favicon.svg" alt="" width="72" height="72">
+        <h2 id="dl-title" class="section-title">Download Netti, free.</h2>
+        <p class="lead muted">No spreadsheets. No account. No ads. Just clarity.</p>
+        <a class="app-store-badge" href="https://apps.apple.com/gb/app/netti/id6758891231">
+          <img src="assets/icons/app-store-badge-black-en-gb.svg" alt="Download on the App Store" width="144" height="48">
         </a>
+        <p class="small muted">iPhone, iOS 17 and later · Rated 4+ · Netti Pro £3.99 one-off</p>
       </div>
     </div>
   </section>
-
-  <!-- SquaredMc strip -->
-  <section id="about" class="squaredmc-strip">
-    <div class="wrap">
-      <p>Netti is built by <a href="https://squaredmc.com/" target="_blank" rel="noopener">SquaredMc</a> — see what else we're working on.</p>
-    </div>
-  </section>
-
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="footer-top">
-      <a class="logo" href="#top" aria-label="Netti home">
-        <img src="assets/icons/logo-white.svg" alt="Netti" width="72" height="24">
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <div class="footer-brand stack stack-12">
+      <a class="brand" href="#top">
+        <img src="assets/icons/favicon.svg" alt="" width="24" height="24">
+        <span>Netti</span>
       </a>
+      <p class="small muted">Netti gives estimates for guidance only. Your payslip may differ because of cumulative PAYE, tax code changes or how your employer runs payroll. Netti is not financial or tax advice.</p>
+    </div>
+    <nav aria-label="Footer">
       <ul class="footer-links">
-        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#change">How it works</a></li>
         <li><a href="#pro">Netti Pro</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="privacy.html#contact-us">Contact</a></li>
+        <li><a href="mailto:hello@squaredmc.com">Contact</a></li>
       </ul>
-    </div>
-    <hr class="footer-divider">
-    <p class="footer-bottom">© 2026 Netti, built by SquaredMc. Netti is a UK PAYE take-home pay calculator and does not constitute financial or tax advice.</p>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom small muted">
+    <span>© 2026 SquaredMc Ltd. Built in the UK.</span>
+    <span>Apple, the Apple logo and iPhone are trademarks of Apple Inc. App Store is a service mark of Apple Inc.</span>
   </div>
 </footer>
 
